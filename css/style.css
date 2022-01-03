@@ -49,6 +49,9 @@ a{
     padding: 0;
     margin: 0;
 }
+a:hover{
+    color: #3e31ff;
+}
 .container{
     max-width: 1054px;
     width: 100%;
@@ -130,58 +133,7 @@ a{
 }
 
 
-.menu__btn{
-    display: none;
-    position: relative;
-    width: 40px;
-    height: 55px;
-    cursor: pointer;
-    transition: all .2s ease;
-}
-.menu__btn span:first-child,
-.menu__btn span:nth-child(2),
-.menu__btn span:nth-child(3),
-.menu__btn span:last-child{
-    right: 0;
-    width: 40px;
-    height: 4px;
-    background-color: #FFFFFF;
-    transition: all .2s ease;
-}
 
-.menu__btn span:first-child{
-    position: absolute;
-    top: 10px;
-}
-.menu__btn span:nth-child(2){
-    position: absolute;
-    top: 22px;
-    transform: translateY(-50%);
-}
-.menu__btn span:nth-child(3){
-    position: absolute;
-    top: 32px;
-    transform: translateY(-50%);
-}
-.menu__btn span:last-child{
-    position: absolute;
-    bottom: 11px;
-}
-
-.menu__btn.active span:first-child{
-    top: 25px;
-    transform: rotate(-45deg);
-}
-.menu__btn.active span:nth-child(2){
-    display: none;
-}
-.menu__btn.active span:nth-child(3){
-    display: none;
-}
-.menu__btn.active span:last-child{
-    top: 25px;
-    transform: rotate(45deg); 
-}
 /* .main{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -239,8 +191,13 @@ a{
 .education,
 .hard-skills,
 .code,
+.projects,
 .experience{
     margin-bottom: 20px;
+}
+.soft-skills__list,
+.hard-skills__list{
+    list-style-type: disc;
 }
 
 .footer{
