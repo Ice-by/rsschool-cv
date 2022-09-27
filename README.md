@@ -1,2 +1,1 @@
-# rsschool-cv
-rsschool
+https://Ice-by.github.io/rsschool-cv/cv
