@@ -1,1 +1,1 @@
-https://Ice-by.github.io/rsschool-cv/c
+https://Ice-by.github.io/rsschool-cv/cv
