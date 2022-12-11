@@ -1,0 +1,257 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    /* padding: 0;
+    margin: 0;     */
+}
+body{
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+}
+@media (max-width: 720px){
+    body{        
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+@media (max-width: 640px){
+    body{        
+        font-size: 19px;
+        line-height: 25px;
+    }
+}
+@media (max-width: 480px){
+    body{        
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+ul{
+    /* padding: 0; */
+    margin: 0;
+    list-style: none;
+}
+/* ol{
+    list-style: none;
+} */
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1054px;
+    width: 100%;
+    padding: 0 15px 0;
+    margin: 0 auto;
+}
+.hidden{    
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    opacity: 0;    
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main__title{
+    font-size: 32px;
+    line-height: 38px;
+}
+.subtitle{
+    font-size: 28px;
+    line-height: 34px;
+    background-color: #757474;
+}
+.title{
+    font-size: 28px;
+    line-height: 34px;
+    background-color: #757474;
+}
+
+
+.header{
+    background-color: #cccccc;
+}
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-left: 0;
+}
+@media (max-width: 480px){
+    .nav__list{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+.nav__item{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (max-width: 720px){
+    .nav__item{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 640px){
+    .nav__item{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+.nav__item:hover{
+    color: #3e31ff;
+}
+
+
+.menu__btn{
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 55px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.menu__btn span:first-child,
+.menu__btn span:nth-child(2),
+.menu__btn span:nth-child(3),
+.menu__btn span:last-child{
+    right: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #FFFFFF;
+    transition: all .2s ease;
+}
+
+.menu__btn span:first-child{
+    position: absolute;
+    top: 10px;
+}
+.menu__btn span:nth-child(2){
+    position: absolute;
+    top: 22px;
+    transform: translateY(-50%);
+}
+.menu__btn span:nth-child(3){
+    position: absolute;
+    top: 32px;
+    transform: translateY(-50%);
+}
+.menu__btn span:last-child{
+    position: absolute;
+    bottom: 11px;
+}
+
+.menu__btn.active span:first-child{
+    top: 25px;
+    transform: rotate(-45deg);
+}
+.menu__btn.active span:nth-child(2){
+    display: none;
+}
+.menu__btn.active span:nth-child(3){
+    display: none;
+}
+.menu__btn.active span:last-child{
+    top: 25px;
+    transform: rotate(45deg); 
+}
+/* .main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+} */
+
+.main__inner{
+    display: flex;    
+}
+.main__left{
+    flex: 0 1 40%;
+    /* background-color: #6b61f8; */
+}    
+.main__right{
+    flex: 0 1 60%;
+}
+.main__left,
+.main__right{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main__left{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+@media (max-width: 720px){
+    .main__inner{
+        flex-wrap: wrap;  
+    }
+    .main__left,
+    .main__right{
+        flex-basis: 100%;
+    } 
+    .main__right{
+        padding-top: 0;
+        
+    } 
+    .main__left{
+        padding-top: 20px;
+       padding-bottom: 0;
+    }    
+}
+.name{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.photo{
+    width: 208px;
+    height: 208px;
+}
+
+.about,
+.contacts,
+.soft-skills,
+.education,
+.hard-skills,
+.code,
+.experience{
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: #cccccc;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__img{
+    width: 150px;
+    height: 60px;
+}
